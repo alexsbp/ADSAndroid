@@ -22,7 +22,7 @@ public class Main extends AppCompatActivity {
 
     public void ToNewWindow()
     {
-        button_Passive = (ImageButton)findViewById(R.id.imageButton);
+        button_Passive = (ImageButton)findViewById(R.id.ImageButton_View);
         button_Passive.setOnClickListener(new View.OnClickListener()
         {
             @Override
