@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Main extends AppCompatActivity {
 
-    Button b1;
+    ImageButton button_Passive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,8 +22,8 @@ public class Main extends AppCompatActivity {
 
     public void ToNewWindow()
     {
-        b1 = (Button)findViewById(R.id.button1);
-        b1.setOnClickListener(new View.OnClickListener()
+        button_Passive = (ImageButton)findViewById(R.id.imageButton);
+        button_Passive.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
