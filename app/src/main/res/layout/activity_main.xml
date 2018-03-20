@@ -9,11 +9,11 @@
 
     <ImageButton
         android:id="@+id/ImageButton_Settings"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/settings" />
@@ -24,29 +24,26 @@
         android:layout_height="288dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
-        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@drawable/passiv" />
-
         app:srcCompat="@drawable/passiv" android:contentDescription="TODO"/>
 
     <ImageButton
         android:id="@+id/ImageButton_View"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/view" />
