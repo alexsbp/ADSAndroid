@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class Main extends AppCompatActivity {
 
-    ImageButton button, button2;
+    ImageButton ImgButton;
     int touchCount;
     TextView txtView;
 
@@ -26,17 +26,19 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         txtView = (TextView) findViewById(R.id.textView);
 
         ToNewWindow();
-        //SettingsClick();
+        OnOffButton();
 
     }
 
     public void ToNewWindow()
     {
-        button = (ImageButton)findViewById(R.id.ImageButton_View);
-        button.setOnClickListener(new View.OnClickListener()
+        ImgButton = (ImageButton)findViewById(R.id.ImageButton_View);
+        ImgButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -46,18 +48,20 @@ public class Main extends AppCompatActivity {
         });
     }
 
-//    public void SettingsClick()
-//    {
-//        button2 = (ImageButton)findViewById(R.id.ImageButton_Settings);
-//        button2.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v)
-//            {
-//
-//            }
-//        });
-//    }
+    public void OnOffButton() {
+
+        ImgButton = (ImageButton)findViewById(R.id.ImageButton_Passiv);
+
+        ImgButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                ImgButton.setImageResource(R.drawable.on);
+
+            }
+        });
+    }
 
     public void StartService (View view)
     {
