@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">ADS-Android</string>
+    <string name="app_name"></string>
     <string name="kaffe"> kaffe string </string>
     <string name="newWindow"> Yaaay, new window </string>
     <string name ="toNewWindow"> View </string>
     <string name ="toOldWindow"> To old window </string>
+    <integer name="touchCounterTest">10</integer>
 </resources>
