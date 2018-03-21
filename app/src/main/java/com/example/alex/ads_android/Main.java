@@ -9,21 +9,25 @@ import android.widget.ImageButton;
 
 public class Main extends AppCompatActivity {
 
-    ImageButton button_Passive;
+    ImageButton ImgButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         ToNewWindow();
+        OnOffButton();
 
     }
 
     public void ToNewWindow()
     {
-        button_Passive = (ImageButton)findViewById(R.id.ImageButton_View);
-        button_Passive.setOnClickListener(new View.OnClickListener()
+        ImgButton = (ImageButton)findViewById(R.id.ImageButton_View);
+        ImgButton.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -32,6 +36,22 @@ public class Main extends AppCompatActivity {
             }
         });
     }
+
+    public void OnOffButton() {
+
+        ImgButton = (ImageButton)findViewById(R.id.ImageButton_Passiv);
+
+        ImgButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                ImgButton.setImageResource(R.drawable.on);
+
+            }
+        });
+    }
+
 
 
 

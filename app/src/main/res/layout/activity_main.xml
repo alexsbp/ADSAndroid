@@ -13,13 +13,14 @@
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:contentDescription="view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/settings" />
 
     <ImageButton
-        android:id="@+id/ImageButton_OnOff"
+        android:id="@+id/ImageButton_on"
         android:layout_width="290dp"
         android:layout_height="288dp"
         android:layout_marginBottom="8dp"
@@ -35,7 +36,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@drawable/passiv" android:contentDescription="TODO"/>
+        app:srcCompat="@drawable/on"/>
 
     <ImageButton
         android:id="@+id/ImageButton_View"
@@ -47,4 +48,21 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/view" />
+
+    <ImageButton
+        android:id="@+id/ImageButton_Passiv"
+        android:layout_width="290dp"
+        android:layout_height="288dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/passiv" />
 </android.support.constraint.ConstraintLayout>
