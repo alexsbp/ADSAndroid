@@ -6,46 +6,39 @@
     android:layout_height="match_parent"
     android:background="@drawable/background2"
     tools:context="com.example.alex.ads_android.Main">
-    <TextView
-        android:id="@+id/textView_Touch"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/ImageButton_Settings"
-        android:onClick="UpdateTouchCount"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:contentDescription="@string/setting"
+        android:onClick="ToSettingsWindow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/settings" />
+        app:srcCompat="@drawable/settings"
+        android:layout_marginRight="16dp" />
 
     <ImageButton
         android:id="@+id/ImageButton_OnOff"
-        android:onClick="StartService"
         android:layout_width="290dp"
         android:layout_height="288dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/onOff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@drawable/on"/>
+        app:srcCompat="@drawable/passiv"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
 
     <ImageButton
         android:id="@+id/ImageButton_View"
@@ -53,41 +46,9 @@
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:contentDescription="@string/view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/view" />
-
-    <ImageButton
-        android:id="@+id/ImageButton_Passiv"
-        android:layout_width="290dp"
-        android:layout_height="288dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497"
-        app:srcCompat="@drawable/passiv" />
-        app:srcCompat="@drawable/view" />
-
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="104dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-         />
+        app:srcCompat="@drawable/view"
+        android:layout_marginLeft="16dp" />
 </android.support.constraint.ConstraintLayout>

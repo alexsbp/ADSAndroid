@@ -7,5 +7,15 @@
     <string name ="setting"> Settings </string>
     <string name ="view"> View </string>
     <string name ="onOff"> ON Off </string>
+    <string name ="excellent"> Excellent </string>
+    <string name ="satisfactory"> Satisfactory </string>
+    <string name ="belowAverage"> Below Average </string>
+    <string name ="clear"> Clear </string>
+    <string name ="submit"> Submit </string>
+    <string name ="howDo"> How do you like the quality of our tutorials? </string>
+    <string name ="ta"> Ta </string>
+
+
+
 
 </resources>

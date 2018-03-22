@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 public class Main2Activity extends AppCompatActivity {
 
-    Button b2;
-    Main main = new Main();
+   Button b2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+       super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
         ToOldWindow();
@@ -27,12 +27,15 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                //startActivity(new Intent(Main2Activity.this, Main.class));
+                startActivity(new Intent(Main2Activity.this, Main.class));
 
-                finish();
-                /*Intent intent = new Intent(getApplicationContext(), Main.class);
+
+                /**Intent intent = new Intent(getApplicationContext(), Main.class);
                 startActivity(intent);*/
             }
         });
     }
 }
+
+
+
